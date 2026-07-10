@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan - Portofolio</title>
+<meta name="description" content="Portofolio Nama Anda, UI/UX Designer & Front-End Developer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- welcome -->
+<div class="loader" id="loader"><div class="loader-mark">J E T</div></div>
+
+<!-- bagian navbar -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#beranda" class="logo">Johan<span>.</span>Edwin</a>
+
+    <nav class="menu" id="menu">
+      <a href="#beranda" class="menu-link active" data-section="beranda">Beranda</a>
+      <a href="#tentang" class="menu-link" data-section="tentang">Tentang</a>
+      <a href="#keahlian" class="menu-link" data-section="keahlian">Skill</a>
+      <a href="#karya" class="menu-link" data-section="karya">Projek</a>
+      <a href="#kontak" class="menu-link" data-section="kontak">Kontak</a>
+    </nav>
+
+    <a href="#" class="cta-btn">Unduh CV</a>
+
+    <button class="burger" id="burger" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ini bagian konteiner hero nya -->
+<section class="hero" id="beranda">
+  <div class="hero-text" data-reveal>
+    <div class="eyebrow">Open To Work</div>
+    <h1>Merancang produk digital,<br>satu <em>pengalaman</em><br>pengguna sekaligus.</h1>
+    <p>
+      Saya Johan Edwin Tambunan — UI/UX Designer &amp; Front-End Developer yang senang mengubah
+      masalah pengguna menjadi antarmuka yang jelas, rapi, dan nyaman digunakan.
+    </p>
+    <div class="hero-btns">
+      <a href="#karya" class="btn-primary">Projek Saya</a>
+      <a href="#kontak" class="btn-ghost">Hubungi Saya</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><b data-count="1">0</b><span>Proyek Selesai</span></div>
+      <div class="stat"><b data-count="3">0</b><span>Bidang Studi</span></div>
+      <div class="stat"><b data-count="2">0</b><span>Pengalaman</span></div>
+    </div>
+  </div>
+
+  <div class="hero-art" data-reveal>
+    <div class="art-blob">
+      <img src="Logo-Johan.png" alt="Logo Johan" class="blop-photo">
+    </div>
+    <div class="float-card fc1"><span class="sq"></span>Figma → React</div>
+    <div class="float-card fc2"><span class="sq"></span>Human-Centered Design</div>
+    <div class="float-card fc3"><span class="sq"></span>Usability Testing</div>
+  </div>
+
+  <a href="#tentang" class="scroll-cue" aria-label="Gulir ke bawah"><span></span></a>
+</section>
+
+<!-- bagian tentang nya -->
+<section class="block" id="tentang">
+  <div class="sec-head" data-reveal>
+    <span class="sec-num"> - </span><span class="sec-title">Tentang Saya</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo" data-reveal>
+       <img src="Logo-Johan.png" alt="Logo Johan" class="about-img">
+    </div>
+    <div data-reveal>
+      <p>
+        Saya mahasiswa Teknik Informatika yang tertarik pada titik temu antara riset pengguna,
+        desain antarmuka, dan pengembangan front-end. Bagi saya, desain yang baik adalah desain
+        yang bisa langsung dipakai, bukan hanya enak dilihat.
+      </p>
+      <p>
+        Beberapa proyek terakhir saya berfokus pada aplikasi layanan kesehatan digital — mulai
+        dari riset kebutuhan pengguna, penyusunan wireframe, hingga implementasi tampilan
+        menggunakan React, dengan pendekatan prinsip Human-Computer Interaction.
+      </p>
+      <div class="badge-wrap">
+        <span class="badge">UI/UX Research</span>
+        <span class="badge">Analysis</span>
+        <span class="badge">React Development</span>
+        <span class="badge">Usability Testing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- bagian skill nya -->
+<section class="block alt-bg" id="keahlian">
+  <div class="sec-head" data-reveal>
+    <span class="sec-num">-</span><span class="sec-title">Skill</span>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-card" data-reveal><div class="ico">Ux</div><h3>Riset Pengguna</h3><p>Wawancara, survei, dan pemetaan kebutuhan sebelum masuk tahap desain.</p></div>
+    <div class="skill-card" data-reveal><div class="ico">Ui</div><h3>Desain Antarmuka</h3><p>Wireframe hingga prototipe interaktif di Figma dengan sistem desain konsisten.</p></div>
+    <div class="skill-card" data-reveal><div class="ico">Fe</div><h3>Front-End</h3><p>Implementasi tampilan dengan React &amp; Tailwind yang rapi dan responsif.</p></div>
+    <div class="skill-card" data-reveal><div class="ico">Ad</div><h3>Analisis Data</h3><p>Dasar pemrosesan data dan NLP untuk mendukung keputusan berbasis riset.</p></div>
+  </div>
+</section>
+
+<!-- bagian projek  nya -->
+<section class="block" id="karya">
+  <div class="sec-head" data-reveal>
+    <span class="sec-num">-</span><span class="sec-title">Projek</span>
+  </div>
+  <div class="work-grid">
+    <article class="work-card" data-reveal data-filter="mobile">
+      <div class="work-thumb thumb-1">
+        <span class="tag-mini">Mobile App</span>
+        <img src="Mediku.png" class="mediku-img" alt="Aplikasi Konsultasi Kesehatan Mental">
+      </div>
+      <div class="work-body">
+        <h3>Aplikasi Konsultasi Kesehatan Mental</h3>
+        <p>Desain UI/UX untuk enam fitur inti, dari chat konsultasi hingga pencarian klinik terdekat.</p>
+        <a href="https://mediku-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link">Lihat detail →</a>
+      </div>
+    </article>
+    <article class="work-card" data-reveal data-filter="web">
+      <div class="work-thumb thumb-2"><span class="tag-mini">Coming Soon</span></div>
+      <div class="work-body">
+        <h3>Coming Soon</h3>
+        <p>Coming Soon &amp; Coming Soon.</p>
+        <a href="#" class="work-link">Coming Soon</a>
+      </div>
+    </article>
+    <article class="work-card" data-reveal data-filter="riset">
+      <div class="work-thumb thumb-3"><span class="tag-mini">Coming Soon</span></div>
+      <div class="work-body">
+        <h3>Coming Soon</h3>
+        <p>Coming Soon.</p>
+        <a href="#" class="work-link">Coming Soon</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- bagian pengalaman nya  -->
+<section class="block band-alt" id="perjalanan">
+  <div class="sec-head" data-reveal>
+    <span class="sec-num">-</span><span class="sec-title">Perjalanan</span>
+  </div>
+  <div class="tl-wrap">
+    <div class="tl-item" data-reveal><div class="tl-dot">1</div><h4>Mulai Kuliah</h4><div class="org">Teknik Informatika</div><p>Mengambil dasar HCI &amp; pemrograman.</p></div>
+    <div class="tl-item" data-reveal><div class="tl-dot">2</div><h4>Proyek UI/UX Pertama</h4><div class="org">Aplikasi Kesehatan Mental</div><p>Merancang wireframe hingga prototipe.</p></div>
+    <div class="tl-item" data-reveal><div class="tl-dot">3</div><h4>Masuk ke Front-End</h4><div class="org">Aplikasi Kesehatan Digital</div><p>Implementasi tampilan dengan React.</p></div>
+    <div class="tl-item" data-reveal><div class="tl-dot">4</div><h4>Siap Berkarya</h4><div class="org">Mencari Peluang Baru</div><p>Terbuka untuk magang &amp; kolaborasi.</p></div>
+  </div>
+</section>
+
+<!-- bagian kontak nya -->
+<section class="contact" id="kontak">
+  <div class="sec-num" data-reveal>-</div>
+  <h2 data-reveal>Mari <em>berkolaborasi</em> dalam proyek berikutnya.</h2>
+  <p data-reveal>Terbuka untuk peluang magang, proyek kolaborasi, maupun diskusi seputar desain produk.</p>
+
+  <form class="contact-form" id="contactForm" data-reveal>
+    <div class="form-row">
+      <input type="text" name="nama" placeholder="Nama kamu" required>
+      <input type="email" name="email" placeholder="Alamat email" required>
+    </div>
+    <textarea name="pesan" rows="4" placeholder="Tulis pesan singkat..." required></textarea>
+    <button type="submit" class="btn-primary">Kirim Pesan</button>
+    <p class="form-note" id="formNote"></p>
+  </form>
+
+  <div class="social-row" data-reveal>
+    <a href="https://www.linkedin.com/in/johantambunan17/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/Johanedwin12" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <span>© <span id="year"></span> Johan Edwin Tambunan — UI/UX Designer &amp; Front-End Developer</span>
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑ Ke Atas</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
