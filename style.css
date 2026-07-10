@@ -1,6 +1,4 @@
-/* =========================================================
-   DESIGN TOKENS
-========================================================= */
+/* bagian desain token */
 :root{
   --navy:#12213B;
   --navy-deep:#0B1830;
@@ -35,9 +33,7 @@ img{max-width:100%;display:block;}
 button{font-family:inherit;border:none;background:none;cursor:pointer;}
 section{scroll-margin-top:var(--nav-h);}
 
-/* =========================================================
-   LOADER
-========================================================= */
+/* bagian loader */
 .loader{
   position:fixed;inset:0;z-index:999;
   background:var(--navy-deep);
@@ -55,9 +51,7 @@ section{scroll-margin-top:var(--nav-h);}
   50%{transform:scale(1.12);opacity:.65;}
 }
 
-/* =========================================================
-   NAVBAR
-========================================================= */
+/* ini navbar */
 .navbar{
   position:fixed;top:0;left:0;right:0;z-index:100;
   height:var(--nav-h);
@@ -104,6 +98,9 @@ section{scroll-margin-top:var(--nav-h);}
   transition:transform .2s ease, background .2s ease;
   white-space:nowrap;
 }
+.menu-cta-mobile{
+  display:none; 
+}
 .cta-btn:hover{background:var(--mint);color:#06301F;transform:translateY(-2px);}
 
 .burger{
@@ -114,9 +111,7 @@ section{scroll-margin-top:var(--nav-h);}
 .burger.open span:nth-child(2){opacity:0;}
 .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
-/* =========================================================
-   HERO
-========================================================= */
+/* ini bagian hero */
 .hero{
   max-width:var(--container);
   margin:0 auto;
@@ -213,9 +208,7 @@ section{scroll-margin-top:var(--nav-h);}
   100%{transform:translateY(10px);opacity:0;}
 }
 
-/* =========================================================
-   SECTION SHELL
-========================================================= */
+/* ini section hel */
 .block{max-width:var(--container);margin:0 auto;padding:90px 32px;}
 .alt-bg{max-width:none;background:#F2F3F7;}
 .alt-bg > *{max-width:var(--container);margin-left:auto;margin-right:auto;}
@@ -227,9 +220,7 @@ section{scroll-margin-top:var(--nav-h);}
 .band-alt > *{max-width:var(--container);margin-left:auto;margin-right:auto;}
 .band-alt .sec-title{color:#fff;}
 
-/* =========================================================
-   ABOUT
-========================================================= */
+/* about */
 .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:50px;align-items:start;}
 .about-photo{
   width:100%;aspect-ratio:4/5;border-radius:16px;
@@ -251,9 +242,7 @@ section{scroll-margin-top:var(--nav-h);}
   padding:8px 14px;border-radius:8px;
 }
 
-/* =========================================================
-   SKILLS
-========================================================= */
+/* skill */
 .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
 .skill-card{
   background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px 20px;
@@ -268,9 +257,7 @@ section{scroll-margin-top:var(--nav-h);}
 .skill-card h3{font-size:14.5px;font-weight:600;color:var(--navy-deep);margin-bottom:6px;}
 .skill-card p{font-family:var(--font-body);font-size:11.5px;color:var(--slate);line-height:1.5;}
 
-/* =========================================================
-   WORK
-========================================================= */
+/* work */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
 .work-card{
   background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;
@@ -296,9 +283,7 @@ section{scroll-margin-top:var(--nav-h);}
 .work-body p{font-family:var(--font-body);font-size:11.5px;color:var(--slate);line-height:1.55;margin-bottom:12px;}
 .work-link{font-family:var(--font-mono);font-size:10.5px;color:var(--mint);letter-spacing:0.4px;}
 
-/* =========================================================
-   TIMELINE
-========================================================= */
+/* timeline */
 .tl-wrap{display:flex;gap:0;position:relative;flex-wrap:wrap;}
 .tl-wrap::before{content:"";position:absolute;top:11px;left:0;right:0;height:2px;background:rgba(255,255,255,0.12);}
 .tl-item{flex:1 1 200px;padding-right:24px;position:relative;margin-bottom:24px;}
@@ -311,9 +296,7 @@ section{scroll-margin-top:var(--nav-h);}
 .tl-item .org{font-family:var(--font-body);font-style:italic;color:var(--mint);font-size:11.5px;margin-bottom:6px;}
 .tl-item p{font-family:var(--font-body);font-size:11px;color:#8FA0BF;line-height:1.5;}
 
-/* =========================================================
-   CONTACT
-========================================================= */
+/* kontak */
 .contact{
   max-width:none;background:var(--navy-deep);padding:90px 32px;text-align:center;color:#fff;
 }
@@ -345,9 +328,7 @@ section{scroll-margin-top:var(--nav-h);}
 }
 .social-row a:hover{color:var(--mint);}
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* footer */
 footer{
   background:var(--navy-deep);border-top:1px solid rgba(255,255,255,0.08);
   padding:22px 32px;display:flex;justify-content:space-between;align-items:center;
@@ -356,18 +337,14 @@ footer{
 .to-top{color:#8992A3;font-family:var(--font-mono);font-size:10px;letter-spacing:0.5px;transition:color .2s ease;}
 .to-top:hover{color:var(--mint);}
 
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
+/* scroll reveal */
 [data-reveal]{
   opacity:0;transform:translateY(28px);
   transition:opacity .7s ease, transform .7s ease;
 }
 [data-reveal].in-view{opacity:1;transform:translateY(0);}
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* responsive gadget */
 @media (max-width:960px){
   .hero{grid-template-columns:1fr;text-align:left;padding-top:calc(var(--nav-h) + 20px);}
   .hero-art{order:-1;margin-bottom:10px;min-height:260px;}
@@ -387,10 +364,21 @@ footer{
     max-height:0;overflow:hidden;
     transition:max-height .35s ease;
   }
-  .menu.open{max-height:320px;}
+  .menu.open{max-height:420px;}
   .menu-link{padding:16px 32px;width:100%;border-bottom:1px solid var(--line);}
   .menu-link::after{display:none;}
   .cta-btn{display:none;}
+  .menu-cta-mobile{
+    display:block;
+    margin:16px 32px;
+    text-align:center;
+    background:var(--navy-deep);
+    color:#fff;
+    font-weight:600;
+    font-size:13px;
+    padding:13px 0;
+    border-radius:30px;
+  }
   .burger{display:flex;}
   .stat-row{gap:26px;}
   .skill-grid{grid-template-columns:1fr;}
