@@ -27,9 +27,7 @@ document.querySelectorAll('.menu-link').forEach(link => {
   });
 });
 
-/* =========================================================
-   3. ACTIVE LINK — tandai menu sesuai section yang sedang dilihat
-========================================================= */
+/* akitf link di menu otomatis aktif */
 const sections = document.querySelectorAll('section[id]');
 const menuLinks = document.querySelectorAll('.menu-link');
 
@@ -46,9 +44,7 @@ const navObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(sec => navObserver.observe(sec));
 
-/* =========================================================
-   4. SCROLL REVEAL — animasi muncul saat elemen masuk viewport
-========================================================= */
+/* animansi masuk vieewport */
 const revealItems = document.querySelectorAll('[data-reveal]');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -62,9 +58,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealItems.forEach(item => revealObserver.observe(item));
 
-/* =========================================================
-   5. COUNTER — angka statistik naik otomatis saat terlihat
-========================================================= */
+/* animasi angka counter */
 const counters = document.querySelectorAll('[data-count]');
 
 function animateCounter(el) {
@@ -95,9 +89,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 counters.forEach(c => counterObserver.observe(c));
 
-/* =========================================================
-   6. FORM KONTAK — validasi ringan + pesan sukses (tanpa backend)
-========================================================= */
+/* form kontak tapi ga ada backend */
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 
@@ -121,14 +113,10 @@ contactForm.addEventListener('submit', (e) => {
   contactForm.reset();
 });
 
-/* =========================================================
-   7. TOMBOL KEMBALI KE ATAS
-========================================================= */
+/* tombol kembali ke atas */
 document.getElementById('toTop').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* =========================================================
-   8. TAHUN OTOMATIS DI FOOTER
-========================================================= */
+/* tahun otomatis paling bawah */
 document.getElementById('year').textContent = new Date().getFullYear();
